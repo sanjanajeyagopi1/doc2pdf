@@ -52,4 +52,11 @@ def main():
                 st.success("PDFs have been successfully merged!")  
                 with open(output_pdf_file, "rb") as f:  
                     st.download_button(  
-                        label="Download
+                        label="Download Merged PDF",  
+                        data=f,  
+                        file_name="merged_document.pdf",  
+                        mime="application/pdf"  
+                    )  
+  
+if __name__ == "__main__":  
+    main()  
