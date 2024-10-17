@@ -1,2 +1,5 @@
-pandoc
-texlive-full
+pandoc  
+texlive-latex-base  
+texlive-xetex  
+texlive-fonts-recommended  
+texlive-plain-generic  
