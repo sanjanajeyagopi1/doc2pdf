@@ -7,7 +7,7 @@ import tempfile
 def convert_word_to_pdf(input_file, output_file):  
     try:  
         # Convert DOCX to PDF using pypandoc  
-        pypandoc.convert_file(input_file, 'pdf', outputfile=output_file)  
+        pypandoc.convert_file(input_file, 'pdf', outputfile=output_file, extra_args=['--pdf-engine=pdflatex'])  
         return output_file  
     except Exception as e:  
         st.error(f"Error converting file: {e}")  
